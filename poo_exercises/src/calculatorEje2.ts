@@ -29,7 +29,7 @@ export class Calculadora {
 
   // metodo for factorial
   factorial(n: number): number {
-    if (n < 0) throw new Error("Don''t exist factorial de negative numbers");
+    if (n < 0) throw new Error("Don''t exist factorial de negative numberss");
     if (n === 0 || n === 1) return 1;
 
     let resultado = 1;

@@ -21,8 +21,8 @@ export class Cancion {
 
   //method para mostrar datos
   mostrarDatos(): void {
-    console.log(`Canción: ${this.titulo}`);
-    console.log(`Género: ${this.genero}`);
+    console.log(`Cancion: ${this.titulo}`);
+    console.log(`Genero: ${this.genero}`);
     console.log(`Autor: ${this.autor}`);
   }
 }

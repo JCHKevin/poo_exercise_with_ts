@@ -19,11 +19,11 @@ export class Cuenta {
   //metodo depositar
   depositar(monto: number): void {
     if (monto < 5) {
-      console.log("El valor a depositar debe ser mayor a $5.00");
+      console.log("El valor a depositar tiene que ser mayor a $5.00");
     } else {
       this.cantidad += monto;
       console.log(
-        `Se ha depositado correctamente $${monto}. Nuevo saldo: $${this.cantidad}`
+        `Se ha depositado correctamente $${monto}. Tu Nuevo saldo: $${this.cantidad}`
       );
     }
   }
