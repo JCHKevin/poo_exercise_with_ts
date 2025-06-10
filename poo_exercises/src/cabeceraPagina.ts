@@ -1,4 +1,4 @@
-class CabeceraPagina {
+export class CabeceraPagina {
   private color: string;
   private fuente: string;
   private alineacion: string;
@@ -33,8 +33,3 @@ class CabeceraPagina {
     console.log(`Alineación: ${this.alineacion}`);
   }
 }
-
-const cabecera = new CabeceraPagina();
-cabecera.configurarPropiedades("Mi Página", "azul", "Arial");
-cabecera.establecerAlineacion("centrado");
-cabecera.imprimirPropiedades();

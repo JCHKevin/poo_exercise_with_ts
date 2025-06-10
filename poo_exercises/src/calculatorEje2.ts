@@ -39,7 +39,3 @@ export class Calculadora {
     return resultado;
   }
 }
-
-const calc = new Calculadora();
-console.log("Suma:", calc.suma(5, 3));
-console.log("Factorial de 5:", calc.factorial(5));

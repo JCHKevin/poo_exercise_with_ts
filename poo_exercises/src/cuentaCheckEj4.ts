@@ -1,8 +1,8 @@
-class Cuenta {
+export class Cuenta {
   private nombre: string;
   private cantidad: number;
-  private tipoCuenta: string;
   private numeroCuenta: string;
+  private tipoCuenta: string;
 
   constructor(
     nombre: string,
@@ -16,7 +16,7 @@ class Cuenta {
     this.numeroCuenta = numeroCuenta;
   }
 
-  // Método para depositar
+  //metodo depositar
   depositar(monto: number): void {
     if (monto < 5) {
       console.log("El valor a depositar debe ser mayor a $5.00");
@@ -28,7 +28,7 @@ class Cuenta {
     }
   }
 
-  // Método para retirar
+  //metodo retirar
   retirar(valor: number): void {
     if (valor < 5) {
       console.log("El monto a retirar debe ser mayor a $5.00");
@@ -49,7 +49,7 @@ class Cuenta {
     console.log(`Ha retirado $${valor}. Saldo restante: $${this.cantidad}`);
   }
 
-  // Método para mostrar datos
+  //metodo para mostrar datos
   mostrarDatos(): void {
     console.log("Datos de la cuenta:");
     console.log(`Nombre: ${this.nombre}`);
@@ -58,10 +58,3 @@ class Cuenta {
     console.log(`Saldo actual: $${this.cantidad}`);
   }
 }
-
-// Uso de la clase
-const miCuenta = new Cuenta("Juan Pérez", 100, "Ahorros", "123456789");
-miCuenta.mostrarDatos();
-miCuenta.depositar(50);
-miCuenta.retirar(30);
-miCuenta.retirar(200); // Probando fondos insuficientes

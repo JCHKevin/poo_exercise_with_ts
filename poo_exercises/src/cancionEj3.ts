@@ -26,8 +26,3 @@ export class Cancion {
     console.log(`Autor: ${this.autor}`);
   }
 }
-
-const miCancion = new Cancion("Bohemia Rhapsodi", "Rock");
-miCancion.establecerAutor = "Queen";
-miCancion.mostrarDatos();
-console.log("Autor obtenido:", miCancion.obtenerAutor);
