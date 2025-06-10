@@ -1,35 +1,35 @@
-class Calculadora {
-  // Método para sumar
-  sumar(a: number, b: number): number {
+export class Calculadora {
+  //suma
+  suma(a: number, b: number): number {
     return a + b;
   }
 
-  // Método para restar
+  //resta
   restar(a: number, b: number): number {
     return a - b;
   }
 
-  // Método para multiplicar
+  //multiplica
   multiplicar(a: number, b: number): number {
     return a * b;
   }
 
-  // Método para dividir
+  //divicion
   dividir(a: number, b: number): number {
     if (b === 0) {
-      throw new Error("No se puede dividir por cero");
+      throw new Error("Error_No_se_puede_dividir_entre_cero");
     }
     return a / b;
   }
 
-  // Método para potencia
+  // method for potencia
   potencia(base: number, exponente: number): number {
     return Math.pow(base, exponente);
   }
 
-  // Método para factorial
+  // metodo for factorial
   factorial(n: number): number {
-    if (n < 0) throw new Error("No existe factorial de números negativos");
+    if (n < 0) throw new Error("Don''t exist factorial de negative numbers");
     if (n === 0 || n === 1) return 1;
 
     let resultado = 1;
@@ -40,7 +40,6 @@ class Calculadora {
   }
 }
 
-// Uso de la clase
 const calc = new Calculadora();
-console.log("Suma:", calc.sumar(5, 3));
+console.log("Suma:", calc.suma(5, 3));
 console.log("Factorial de 5:", calc.factorial(5));

@@ -1,25 +1,25 @@
-class Cancion {
+export class Cancion {
   private titulo: string;
+  private autor: string;
   private genero: string;
-  private autor: string; // Atributo privado
 
   constructor(titulo: string, genero: string) {
     this.titulo = titulo;
+    this.autor = "Desconocido";
     this.genero = genero;
-    this.autor = "Desconocido"; // Valor por defecto
   }
 
-  // Getter para autor
+  //Getter para autor
   get obtenerAutor(): string {
     return this.autor;
   }
 
-  // Setter para autor
+  //Setter para autor
   set establecerAutor(nuevoAutor: string) {
     this.autor = nuevoAutor;
   }
 
-  // Método para mostrar datos
+  //method para mostrar datos
   mostrarDatos(): void {
     console.log(`Canción: ${this.titulo}`);
     console.log(`Género: ${this.genero}`);
@@ -27,8 +27,7 @@ class Cancion {
   }
 }
 
-// Uso de la clase
-const miCancion = new Cancion("Bohemian Rhapsody", "Rock");
+const miCancion = new Cancion("Bohemia Rhapsodi", "Rock");
 miCancion.establecerAutor = "Queen";
 miCancion.mostrarDatos();
 console.log("Autor obtenido:", miCancion.obtenerAutor);
