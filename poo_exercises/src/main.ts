@@ -17,9 +17,11 @@ console.log("---------EJERCICIO 2-----------------------------------------");
 
 const calc = new Calculadora();
 console.log("Suma:", calc.suma(5, 3));
-console.log("Suma:", calc.restar(100, 50));
-console.log("Suma:", calc.multiplicar(5, 5));
+console.log("rest:", calc.restar(100, 50));
+console.log("multiplication:", calc.multiplicar(5, 5));
 console.log("Factorial de 5:", calc.factorial(5));
+console.log("division:", calc.dividir(5, 2));
+// console.log("division:", calc.dividir(5, 0));
 
 console.log("---------EJERCICIO THREE---------------------------------------");
 
@@ -31,7 +33,7 @@ console.log("Autor obtenido:", miCancion.obtenerAutor);
 console.log("---------EJERCICIO FOUR ---------------------------------------");
 //probarlo solo solin solito
 
-const miCuenta = new Cuenta("KJ Bukele", 100, "Ahorros", "123456789");
+const miCuenta = new Cuenta("KJ Bukele", 100, "Ahorros", "1122334455");
 miCuenta.mostrarDatos();
 // miCuenta.depositar(50);
 // miCuenta.retirar(30);
